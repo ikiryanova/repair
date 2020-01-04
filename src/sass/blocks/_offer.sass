@@ -1,0 +1,104 @@
+.offer
+  background: url('../img/offer/offer-bg.png') no-repeat
+  background-position: center right
+  background-size: contain
+  position: relative
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #ffffff
+  &-block
+    width: 50%
+    padding-right: 90px
+    position: relative
+  &__title
+    max-width: 352px
+    line-height: 35px
+    margin: 0
+    margin-bottom: 19px
+    text-align: left
+    +bold
+  &__subtitle
+    max-width: 232px
+    margin-bottom: 30px
+  &__input
+    margin-bottom: 30px
+    width: 240px
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%
+    min-height: 70px
+    font-size: 16px
+  &__contacts
+    display: flex
+    justify-content: space-between
+    margin-top: 25px
+    line-height: 24px
+  &__call
+    max-width: 250px
+  &__phone
+    max-width: 204px
+  &__tel 
+    display: inline-block
+    color: $text-color
+    font-size: 15px
+    text-decoration: none
+    +bold
+.success
+  margin-top: 15px
+  +bold
+
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 100%
+      margin-bottom: 8px
+    &__buttom
+      font-size: 13px
+@media (max-width: 768px)
+  .offer
+    background: #fff
+    &-block
+      width: 90%
+      padding-right: 0
+    &__title
+      max-width: 100%
+    &__subtitle
+      max-width: 100%
+
+@media (max-width: 567px)
+  .offer
+    padding: 50px 0 49px
+    &-block
+      // margin-left: 20px
+      // margin-right: 10px
+      width: 278px
+      margin: 0 auto
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      width: 269px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 25px
+    &__input
+      width: 275px
+    &__button
+      width: 275px
+      font-size: 14px
+    &__contacts
+      margin-left: 6px
+      margin-top: 23px
+      flex-direction: column
+    &__call
+      padding-bottom: 7px
+  .btn-mobile
+      display: block
+
+

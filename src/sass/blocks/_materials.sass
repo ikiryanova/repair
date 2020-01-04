@@ -1,0 +1,87 @@
+.materials
+  &-header
+    background-color: $bg-materials
+    &__title
+      margin: 0 auto
+      padding: 84px 0 94px
+      text-align: center
+      font-size: 32px
+      line-height: 50px
+  &__cards
+    display: flex
+    justify-content: center
+    margin: 100px 0 133px
+  &-card
+    background: $backgroung-color
+    margin-right: 30px
+    &:last-child
+      margin-right: 0
+    &__text
+      width: 282px
+      margin: 22px auto 46px 26px
+      font-size: 16px
+      line-height: 23px
+    &__image
+      width: 370px
+      height: 273px
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+@media (max-width: 1200px)
+  .materials
+    &-header
+      &__title
+        font-size: 24px
+    &__cards
+      // align-items: center
+      // flex-direction: column
+    &-card
+      width: 300px
+      &__image
+        width: 300px
+      &__text
+        margin: 24px auto
+      // width: 370px
+      // margin-bottom: 30px
+      // &:last-child
+      //   margin-bottom: 0
+@media (max-width: 1100px)
+  .materials
+    &-header
+      &__title
+        font-size: 20px
+        line-height: 32px
+    &__cards
+      align-items: center
+      flex-direction: column   
+    &-card
+      width: 370px
+      margin-right: 0
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+      &__image
+        width: 370px
+@media (max-width: 567px)
+  .materials
+    &-header
+      &__title
+        padding: 70px 0 72px
+        width: 265px
+        font-size: 18px
+        line-height: 22px
+    &__cards 
+      margin: 59px 0 77px
+    &-card
+      width: 277px
+      &:last-child
+        margin-bottom: 0
+      &__text
+        width: 212px
+        margin: 17px auto 35px 19px
+        font-size: 12px
+        line-height: 16.83px
+      &__image
+        width: 277px
+        height: 203px

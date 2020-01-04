@@ -1,0 +1,75 @@
+*
+  box-sizing: border-box
+body
+  +reg
+img
+  max-width: 100%
+.container
+  width: 1170px 
+  margin: auto
+@media (max-width: 1200px)
+  .container
+    width: 760px
+    margin: auto
+@media (max-width: 768px)
+  .container
+    max-width: 580px
+    width: 90%
+    margin: auto
+  .section
+    padding-top: 60px
+    padding-bottom: 60px
+@media (max-width: 567px)
+  .container
+    max-width: 420px
+    width: 90%
+    margin: auto
+@media (max-width: 320px)
+  .container
+    max-width: 320px
+    width: 100%
+
+.button
+  border-radius: 10px
+  background-color: $main-color
+  border: none 
+  font-size: 13px
+  outline: none
+  padding: 15px 26px
+  +bold
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
+.section
+  padding: 77px 0 88px
+  &-title 
+    font-size: 24px
+    +bold
+    text-align: center
+  &-subtitle
+    font-size: 16px
+    display: block
+.input
+  border: 1px solid $border-input
+  padding: 24px 24px
+  font-size: 15px
+  border-radius: 10px
+  &:focus
+    outline: none
+    border: 1px solid orange
+.arrows
+  &__left, &__right
+    &:hover
+      cursor: pointer 
+input.invalid
+  border: 1px solid red
+  border-radius: 10px
+div.invalid
+  color: red
+  display: inline-block
+  margin-left: 10px
+  margin-bottom: 10px
+
+  
+
+  

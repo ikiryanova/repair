@@ -24,12 +24,18 @@
     +bold
   &__subtitle
     max-width: 232px
-    margin-bottom: 30px
+    margin-bottom: 31px
   &__input
     margin-bottom: 30px
     width: 240px
     &:first-child
-      margin-right: 10px
+      margin-right: 13px
+  &-wrap
+    width: 240px
+    display: inline-block
+    position: relative
+    &:first-child
+      margin-right: 13px
   &__button
     width: 100%
     min-height: 70px
@@ -37,7 +43,7 @@
   &__contacts
     display: flex
     justify-content: space-between
-    margin-top: 25px
+    margin-top: 24px
     line-height: 24px
   &__call
     max-width: 250px
@@ -49,6 +55,12 @@
     font-size: 15px
     text-decoration: none
     +bold
+  &-block &-wrap label.invalid
+    color: red
+    display: inline-block
+    margin-left: 30px
+    margin-top: -22px
+    position: absolute
 .success
   margin-top: 15px
   +bold
@@ -56,9 +68,14 @@
 @media (max-width: 1200px)
   .offer
     background-size: cover
+    &-block
+      padding-right: 34px
+    &-wrap
+      width: 100%
+    //   margin-bottom: 7px
     &__input
       width: 100%
-      margin-bottom: 8px
+      margin-bottom: 7px
     &__buttom
       font-size: 13px
 @media (max-width: 768px)
@@ -67,6 +84,7 @@
     &-block
       width: 90%
       padding-right: 0
+      margin: 0 auto
     &__title
       max-width: 100%
     &__subtitle
@@ -74,19 +92,19 @@
 
 @media (max-width: 567px)
   .offer
-    padding: 50px 0 49px
+    padding: 51px 0 49px
     &-block
       // margin-left: 20px
       // margin-right: 10px
       width: 278px
-      margin: 0 auto
+      // margin: 0 auto
     &__title
       font-size: 18px
       line-height: 1.2
       width: 269px
     &__subtitle
       font-size: 14px
-      margin-bottom: 25px
+      margin-bottom: 27px
     &__input
       width: 275px
     &__button

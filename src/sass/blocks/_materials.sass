@@ -3,10 +3,12 @@
     background-color: $bg-materials
     &__title
       margin: 0 auto
-      padding: 84px 0 94px
+      padding: 87px 0 94px
       text-align: center
       font-size: 32px
       line-height: 50px
+      +bold
+      letter-spacing: -0.9px
   &__cards
     display: flex
     justify-content: center
@@ -16,14 +18,19 @@
     margin-right: 30px
     &:last-child
       margin-right: 0
+    // &:nth-child(2)
+    //   .meterials-card__text
+    //     margin: 21px auto 52px 25px 
     &__text
-      width: 282px
-      margin: 22px auto 46px 26px
+      width: 297px
+      margin: 21px auto 49px 25px
       font-size: 16px
       line-height: 23px
+      // &:nth-child(2) 
+      //   margin: 21px auto 52px 25px      
     &__image
       width: 370px
-      height: 273px
+      height: 271px
       img
         width: 100%
         height: 100%
@@ -67,21 +74,32 @@
   .materials
     &-header
       &__title
-        padding: 70px 0 72px
-        width: 265px
-        font-size: 18px
+        padding: 70px 0 75px
+        width: 261px
+        font-size: 19px
         line-height: 22px
     &__cards 
       margin: 59px 0 77px
     &-card
-      width: 277px
+      width: 270px
       &:last-child
         margin-bottom: 0
+      &:nth-child(2)
+        width: 278px
+        .materials-card__image
+          width: 278px
+          height: 200px
+      &:nth-child(3)
+        width: 271px
+        margin-left: -5px
+        .materials-card__image
+          width: 271px
+          height: 200px
       &__text
-        width: 212px
+        width: 240px
         margin: 17px auto 35px 19px
         font-size: 12px
-        line-height: 16.83px
+        line-height: 17.83px
       &__image
-        width: 277px
-        height: 203px
+        width: 270px
+        height: 200px

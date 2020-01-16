@@ -25,16 +25,16 @@
   &__text
     font-size: 14px
     max-width: 152px
-    margin: 29px auto 0
+    margin: 28px auto 0
     line-height: 19px
   &s
-    padding: 35px auto 97px
+    padding: 38px 0 96px
     &__title
       margin: auto
-      margin-bottom: 50px
-      width: 680px
-      font-size: 29px
-      line-height: 45px
+      margin-bottom: 46px
+      width: 654px
+      font-size: 30px
+      line-height: 46px
       +bold
     &__subtitle
       text-align: center
@@ -61,26 +61,36 @@
         justify-content: center
 @media (max-width: 768px)
   .step
-    margin-bottom: 23px
+    margin-bottom: 30px
     &:after
       display: none
     &s 
-      padding: 24px 0 40px
+      padding: 21px 0 45px
       &-block
         flex-direction: column
       &__title
         width: 350px
         font-size: 18px
-        line-height: 20px
-        margin: 0 auto 27px
+        line-height: 21px
+        margin: 0 auto 25px
       &__subtitle
         margin-bottom: 34px
         font-size: 14px
 @media (max-width: 567px)
   .step
+    &:nth-child(n+2)
+      .step__text
+        margin-top: 32px
+    &:nth-child(4)
+      .step__text
+        margin-top: 31px
+        line-height: 15px
+    &:nth-child(5)
+      .step__text
+        margin-top: 28px
     &__text
-      margin-top: 23px
-      line-height: 18px
+      margin-top: 22px
+      line-height: 14px
       font-size: 13px
     &s
       &__title
